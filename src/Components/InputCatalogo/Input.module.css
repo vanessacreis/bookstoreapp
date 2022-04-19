@@ -1,6 +1,9 @@
 .intupCatalogo {
   width: 679px;
   border-bottom: 2px solid #8c3f23;
+  border-top-style: hidden;
+  border-inline-end: none;
+  border-inline-start: none;
 }
 .divInput {
   width: 100%;
