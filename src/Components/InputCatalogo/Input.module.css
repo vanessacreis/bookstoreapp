@@ -1,0 +1,11 @@
+.intupCatalogo {
+  width: 679px;
+  border-bottom: 2px solid #8c3f23;
+}
+.divInput {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
