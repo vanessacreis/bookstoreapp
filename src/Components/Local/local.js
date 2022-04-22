@@ -9,7 +9,7 @@ export const Local = styled.div`
   line-height: 20px;
   font-size: 14px;
   font-family: ${colors.titles};
-  background-color: ${colors.links};
+  background-color: ${colors.red};
   clip-path: polygon(100% 100%, 50% 75%, 0 100%, 0 0, 100% 0);
   display: flex;
   flex-direction: column;
