@@ -5,7 +5,7 @@ export const colors = {
   black: "#0D0D0D",
   white: "#FCFCFC",
   blue: "#142126",
-  links: "#3F1111",
+  red: "#8C1818",
   contrast: "#D9BFA0",
   orange: "#E2A35D",
   titles: "'Noto Serif', serif",
