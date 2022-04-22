@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { colors } from "../../Style/globalStyle.js";
 
 export const Local = styled.div`
-  width: 140px;
-  height: 250px;
+  width: 160px;
+  height: 220px;
   margin: 1em;
   color: ${colors.white};
   line-height: 20px;
@@ -19,6 +19,7 @@ export const Local = styled.div`
   right: 80px;
   top: 55%;
   padding-top: 10px;
+  border-radius: 5px;
 
   > p {
     margin: 5px;
