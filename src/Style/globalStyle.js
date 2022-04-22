@@ -8,7 +8,7 @@ export const colors = {
   red: "#8C1818",
   contrast: "#D9BFA0",
   orange: "#E2A35D",
-  titles: "'Noto Serif', serif",
+  titles: "'Lora', serif",
   text: "'Montserrat', sans-serif",
 };
 
