@@ -3,6 +3,7 @@ import * as S from "./index.js"
 
 function Div1(){
     return(<S.ColunaPai>
+        <div>
     <img src="https://miro.medium.com/max/1400/0*xRkytAftnlGPo3jK.jpg"></img>
     <ul>
         <li>Editora:</li>
@@ -11,5 +12,6 @@ function Div1(){
         <li>País:</li>
         <li>Ano:</li>
     </ul>
+    </div>
     </S.ColunaPai>);}
     export default Div1;
