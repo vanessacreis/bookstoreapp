@@ -46,6 +46,14 @@ export const Frase = styled.p`
 
   .autor {
     color: ${colors.red};
+
+    &::selection {
+      background-color: ${colors.contrast}80;
+    }
+  }
+
+  &::selection {
+    background-color: ${colors.contrast}80;
   }
 `;
 
@@ -63,6 +71,7 @@ export const Banners = styled.div`
     background-size: cover;
     background-position: center;
     margin-right: 10px;
+    border-radius: 10px;
   }
 
   .banner2 {
@@ -70,17 +79,10 @@ export const Banners = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-radius: 10px;
   }
 
   @media (max-width: 600px) {
     display: none;
   }
-`;
-
-export const OutroDestaque = styled.section`
-  width: 80%;
-  height: 50vh;
-  background-color: ${colors.white};
-  margin: 40px;
-  border-radius: 5px;
 `;
