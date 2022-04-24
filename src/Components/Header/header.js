@@ -9,7 +9,7 @@ export const Header = styled.header`
   align-items: center;
   justify-content: flex-end;
   gap: 35px;
-  position: fixed;
+  position: sticky;
   z-index: 2;
 
   .nav_link {
