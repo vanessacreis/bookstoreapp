@@ -1,8 +1,11 @@
 .botao {
   margin-left: 10px;
+  visibility: hidden;
+  cursor: pointer;
 }
 
 button img {
-  width: 30px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
 }
