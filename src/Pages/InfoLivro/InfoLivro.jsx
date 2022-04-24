@@ -1,16 +1,15 @@
-//
-import styles from "./InfoLivro.module.css";
-import Div1 from "../../Components/InfoLivro/DivEsquerda/index";
-import Div2 from "../../Components/InfoLivro/DivDireita/index"
+import * as S from "./infolivro.js";
+import Div1 from "../../Components/Container01_InfoLivro/Index.jsx";
+import Div2 from "../../Components/Container02_InfoLivro/Index.jsx"
 function SobreOLivro(){
     return(
-        <main>
-            <Div2/>
+        <S.Main>
             <Div1/>
+            <Div2/>
             
-            <p className={styles.teste}>TESTE DO SCROLL</p>
+            
 
-        </main>
+        </S.Main>
     )
 }
 export default SobreOLivro
