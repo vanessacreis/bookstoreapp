@@ -5,7 +5,7 @@ import * as S from "./conheca.js";
 const Conheca = () => {
   return (
     <S.Conheca>
-      <img src="./assets/imgs/BookTruckquad.jpg" alt="" />
+      <img src="./assets/imgs/BookTruck.svg" alt="" />
       <S.Texto>
         <h3>Conheça-nos</h3>
         <p>
