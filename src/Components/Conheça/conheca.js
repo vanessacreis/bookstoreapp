@@ -7,15 +7,19 @@ export const Conheca = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
 
   > img {
-    width: 50%;
+    width: 49%;
     min-width: 300px;
     height: 30vh;
     object-fit: cover;
     border-radius: 10px;
-    margin: 10px 0;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+      transition: all 1s;
+    }
   }
 
   @media (max-width: 600px) {
@@ -27,7 +31,7 @@ export const Conheca = styled.div`
 `;
 
 export const Texto = styled.div`
-  width: 48%;
+  width: 50%;
   height: 80%;
   text-align: center;
 
@@ -44,6 +48,10 @@ export const Texto = styled.div`
     margin: 0 10px;
     text-align: justify;
     font-size: 16px;
+
+    &::selection {
+      background-color: ${colors.contrast}80;
+    }
   }
 
   @media (max-width: 600px) {
