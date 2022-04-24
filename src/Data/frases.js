@@ -4,7 +4,8 @@ export const frases = [
     autor: "Stephen King",
   },
   {
-    frase: "Quem escreve constrói um castelo, e quem lê passa a habitá-lo.",
+    frase:
+      "As palavras sempre ficam. Lembre-se sempre do poder das palavras. Quem escreve constrói um castelo, e quem lê passa a habitá-lo.",
     autor: "Markus Zusak",
   },
   {
@@ -15,5 +16,14 @@ export const frases = [
   {
     frase: "Quem não tem amigo mas tem um livro tem uma estrada.",
     autor: "Maria Carolina de Jesus",
+  },
+  {
+    frase: "Sempre imaginei que o paraíso fosse uma espécie de biblioteca.",
+    autor: "Jorge Luis Borges",
+  },
+  {
+    frase:
+      "Os livros não são feitos para alguém acredite neles, mas para serem submetidos à investigação. Quando consideramos um livro, não devemos perguntar o que diz, mas o que significa.",
+    autor: "Umberto Eco",
   },
 ];
