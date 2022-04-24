@@ -10,7 +10,6 @@ export const Footer = styled.footer`
   align-items: center;
   justify-content: space-evenly;
   position: absolute;
-  bottom: 0;
 
   .separador {
     width: 70%;
