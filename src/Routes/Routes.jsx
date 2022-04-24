@@ -11,6 +11,7 @@ const Routes = () => {
       <Header />
       <Switch>
         <Route path="/" element={<Home />} />
+        <Route path="/conheca" element={<Home />} />
       </Switch>
     </BrowserRouter>
   );
