@@ -17,16 +17,20 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
     ::-webkit-scrollbar {
       width: 10px;
       height: 8px;
     }
+
     ::-webkit-scrollbar-track {
       box-shadow: inset 0 0 5px ${colors.white};
     }
+
     ::-webkit-scrollbar-thumb {
       background: ${colors.orange};
     }
+    
   }
   html,body{
     width: 100%;
