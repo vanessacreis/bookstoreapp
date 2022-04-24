@@ -14,6 +14,13 @@ export const Card = styled.div`
     height: 70%;
     object-fit: cover;
     border-radius: 10px;
+    opacity: 0.8;
+
+    &:hover {
+      transition: all 1s;
+      box-shadow: 2px 2px 10px ${colors.orange};
+      opacity: 1;
+    }
   }
 
   .title {
@@ -21,11 +28,19 @@ export const Card = styled.div`
     font-weight: bolder;
     color: ${colors.black};
     margin-top: 10px;
+
+    &::selection {
+      background-color: ${colors.contrast}80;
+    }
   }
 
   .writer {
     font-size: 14px;
     font-weight: 300;
     color: ${colors.black};
+
+    &::selection {
+      background-color: ${colors.contrast}80;
+    }
   }
 `;
