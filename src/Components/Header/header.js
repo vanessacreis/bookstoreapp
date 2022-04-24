@@ -8,19 +8,21 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 25px;
+  gap: 35px;
+  position: fixed;
+  z-index: 2;
 
   .nav_link {
     color: ${colors.white};
     font-family: ${colors.text};
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
   }
+
   .nav_link:hover {
-    text-decoration: underline;
     color: ${colors.contrast};
-    font-weight: 600;
+    transition: all 0.5s;
   }
 
   .active {

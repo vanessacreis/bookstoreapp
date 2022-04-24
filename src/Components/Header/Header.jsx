@@ -13,10 +13,10 @@ const Header = () => {
         Home
       </NavLink>
       <NavLink
-        to="/historia"
+        to="/conheca"
         className={({ isActive }) => `nav_link${isActive ? " active" : ""}`}
       >
-        História
+        Conheça
       </NavLink>
       <NavLink
         to="/catalogo"
