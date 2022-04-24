@@ -3,8 +3,8 @@ import styles from "../BotaoCatalogo/Botao.module.css";
 function Botao() {
   return (
     <div>
-      <button className={styles.Botao}>
-        <img src="/assets/icons/book-search.svg" alt="" className="iconRedes" />
+      <button className={styles.botao}>
+        <img src="/assets/icons/book-search.svg" alt="" />
       </button>
     </div>
   );
