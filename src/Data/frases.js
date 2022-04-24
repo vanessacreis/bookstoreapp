@@ -14,7 +14,7 @@ export const frases = [
     autor: "Graciliano Ramos",
   },
   {
-    frase: "Quem não tem amigo mas tem um livro tem uma estrada.",
+    frase: "Quem não tem amigo, mas tem um livro, tem uma estrada.",
     autor: "Maria Carolina de Jesus",
   },
   {
@@ -25,5 +25,30 @@ export const frases = [
     frase:
       "Os livros não são feitos para alguém acredite neles, mas para serem submetidos à investigação. Quando consideramos um livro, não devemos perguntar o que diz, mas o que significa.",
     autor: "Umberto Eco",
+  },
+  {
+    frase:
+      "A leitura é uma fonte inesgotável de prazer, mas, por incrível que pareça, a quase totalidade não sente esta sede.",
+    autor: "Carlos Drummond de Andrade",
+  },
+  {
+    frase:
+      "O processo de leitura possibilita essa operação maravilhosa que é o encontro do que está dentro do livro com o que está guardado na nossa cabeça.",
+    autor: "Ruth Rocha",
+  },
+  {
+    frase:
+      "Muitos homens iniciaram uma nova era na sua vida a partir da leitura de um livro.",
+    autor: "Henry David Thoreau",
+  },
+  {
+    frase:
+      "Ler um livro é para o bom leitor conhecer a pessoa e o modo de pensar de alguém que lhe é estranho. É procurar compreendê-lo e, sempre que possível, fazer dele um amigo.",
+    autor: "Hermann Hesse",
+  },
+  {
+    frase:
+      "Como terras exóticas e estranhas, livros me proporcionaram aventura, novas formas de pensar e de ser. Sobretudo, apresentaram uma diferente perspectiva, que quase sempre me forçava a sair da zona de conforto.",
+    autor: "bell hooks",
   },
 ];

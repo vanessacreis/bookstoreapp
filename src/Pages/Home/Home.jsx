@@ -20,7 +20,7 @@ const Home = () => {
         <S.Vitrine>
           <S.Frase>
             {frases[randomNum].frase} –
-            <span className="autor">{frases[randomNum].autor}</span>
+            <span className="autor"> {frases[randomNum].autor}</span>
           </S.Frase>
           <Destaques />
           <S.Banners>
