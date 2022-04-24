@@ -2,39 +2,51 @@ import styled from "styled-components";
 import { colors } from "../../Style/globalStyle.js";
 
 export const Conheca = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  min-height: 50vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
-  line-height: 28px;
-
-  > h3 {
-    font-family: ${colors.titles};
-    color: ${colors.red};
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 24px;
-  }
-
-  > hr {
-    width: 30%;
-    margin: 20px;
-  }
-
-  > p {
-    width: 80%;
-    margin: 0 5px;
-    text-align: center;
-    font-size: 18px;
-  }
 
   > img {
-    width: 80%;
-    height: 50%;
+    width: 50%;
+    min-width: 300px;
+    height: 30vh;
     object-fit: cover;
     border-radius: 10px;
     margin: 10px 0;
+  }
+
+  @media (max-width: 600px) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const Texto = styled.div`
+  width: 48%;
+  height: 80%;
+  text-align: center;
+
+  > h3 {
+    color: ${colors.red};
+    font-family: ${colors.titles};
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  > p {
+    width: 100%;
+    margin: 0 10px;
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  @media (max-width: 600px) {
+    width: 80%;
   }
 `;
