@@ -6,9 +6,6 @@ function SobreOLivro(){
         <S.Main>
             <Div1/>
             <Div2/>
-            
-            
-
         </S.Main>
     )
 }
