@@ -4,11 +4,7 @@ import { colors } from "../../Style/globalStyle.js";
 export const Container = styled.main`
   width: 100%;
   min-height: 100vh;
-  background-image: url(/assets/imgs/BGpb.svg);
   background-color: ${colors.white};
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,28 +21,66 @@ export const Logo = styled.section`
   align-items: center;
 `;
 
-export const Destaque = styled.section`
+export const Vitrine = styled.section`
   width: 100%;
-  height: 100vh;
+  height: auto;
+  min-height: 130vh;
   background-color: ${colors.white};
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-export const Grid = styled.div`
-  width: 90%;
-  height: 70vh;
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
-  gap: 3%;
+export const Frase = styled.p`
+  width: 80%;
+  min-height: 70px;
+  height: auto;
   margin-top: 80px;
+  margin-bottom: 25px;
+  background-image: url(/assets/icons/quote.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  color: ${colors.black};
+  font-size: 26px;
+  line-height: 30px;
+
+  .autor {
+    color: ${colors.red};
+  }
+`;
+
+export const Banners = styled.div`
+  width: 80%;
+  min-width: 400px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-top: 15px;
+
+  .banner1 {
+    background-image: url(/assets/imgs/bienal-banner.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+  }
+
+  .banner2 {
+    background-image: url(/assets/imgs/machado-banner.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const OutroDestaque = styled.section`
   width: 80%;
   height: 50vh;
   background-color: ${colors.white};
-  margin-top: 40px;
+  margin: 40px;
   border-radius: 5px;
 `;
