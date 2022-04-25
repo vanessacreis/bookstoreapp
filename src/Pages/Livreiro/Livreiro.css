@@ -1,11 +1,25 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* body {
+  background: url("https://s3-alpha-sig.figma.com/img/e97f/b0a8/cc5b1d1152738b94512e8ee40cc016e0?Expires=1652054400&Signature=PwV8VtjLApTlrBEz4efURxPqgyUbm2-0Go5f-AZ237TZgALCFIhbP4z8XcNmqSQZDvIc297~khya6zy0XUjAvET3vf4JyzqVP3IBbMu6tS-I4O4crwe9Mbef86vA3Qp78dAJZ~Xjt1jy7X2xblxKPsmFRHAyZbFYL7PgtNu70c6UhEW0G2Uie0G3ug1jXS9zHeTtP3QCs~ru~LhlJKskBqYVZpKRaQqFAUNQi~lVTktdE8ODFofdep~C7YmoHq-a7SVg07yfQ6WI8B181dUAFtH8ULnNM-wblXBfhj9eUstGT3uuzdsjrL7yd8deQdRaTYQDt9xswHMrAFtAfi2L7g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-size: cover;
+} */
+
 .user-login {
   width: 400px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .user-login__title {
+  margin-top: 40px;
+  font-family: "Noto Serif", serif;
   font-size: 40px;
-  color: #0abde3;
+  font-weight: 400;
+  color: #0d0d0d;
   margin-bottom: 50px;
   text-align: center;
 }
@@ -18,16 +32,21 @@
 
 .user-login__form-control label {
   margin-bottom: 5px;
-  color: #979797;
+  color: #142126;
+  font-weight: 400;
   font-size: 16px;
+  text-align: center;
 }
 
 .user-login__form-control input {
-  border-radius: 5px;
+  border-radius: 0px;
   border-right: 0px;
   border-left: 0px;
   border-top: 0px;
+  border-color: #3f1111;
   height: 36px;
   padding: 5px 10px;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  background: transparent;
 }
-

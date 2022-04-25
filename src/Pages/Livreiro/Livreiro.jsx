@@ -20,10 +20,11 @@ const UserLogin = () => {
 
   return (
     <div className="user-login">
-      <h1 className="user-login__title">Logo da Livraria</h1>
+      <h1 className="user-login__title">
+        LOGO DA <br></br> LIVRARIA
+      </h1>
       <form autoComplete="nope">
         <div className="user-login__form-control">
-          <label htmlFor="nomeCargo">Cargo</label>
           <input
             id="nomeCargo"
             type="text"
@@ -32,9 +33,9 @@ const UserLogin = () => {
             onChange={onChange}
             value={values.nomeCargo}
           />
+          <label htmlFor="nomeCargo">Cargo</label>
         </div>
         <div className="user-login__form-control">
-          <label htmlFor="matricula">Matrícula</label>
           <input
             id="matricula"
             type="text"
@@ -42,6 +43,7 @@ const UserLogin = () => {
             onChange={onChange}
             value={values.matricula}
           />
+          <label htmlFor="matricula">Matrícula</label>
         </div>
       </form>
     </div>
