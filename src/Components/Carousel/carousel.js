@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "../../Style/globalStyle.js";
 
 export const Container = styled.div`
   width: 30vw;
@@ -9,7 +8,7 @@ export const Container = styled.div`
   .slick-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 5px;
   }
 `;
