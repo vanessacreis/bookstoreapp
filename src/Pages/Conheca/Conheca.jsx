@@ -9,7 +9,22 @@ const Conheca = () => {
       <S.Container>
         <S.Historia>
           <Carousel />
-          
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            sapiente? Quas, natus atque id nisi doloremque ab repellat
+            consequuntur iste, hic nesciunt pariatur iusto eos sit sint ipsam
+            nemo laborum. Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Optio, sapiente? Quas, natus atque id nisi doloremque ab
+            repellat consequuntur iste, hic nesciunt pariatur iusto eos sit sint
+            ipsam nemo laborum. <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            sapiente? Quas, natus atque id nisi doloremque ab repellat
+            consequuntur iste, hic nesciunt pariatur iusto eos sit sint ipsam
+            nemo laborum. Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Optio, sapiente? Quas, natus atque id nisi doloremque ab
+            repellat consequuntur iste, hic nesciunt pariatur iusto eos sit sint
+            ipsam nemo laborum.
+          </p>
         </S.Historia>
       </S.Container>
       <LargeFooter />

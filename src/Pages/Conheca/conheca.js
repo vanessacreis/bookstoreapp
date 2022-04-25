@@ -14,4 +14,14 @@ export const Container = styled.main`
 export const Historia = styled.section`
   width: 80%;
   height: 100vh;
+  display: flex;
+  margin-top: 25px;
+
+  > p {
+    margin-top: 25px;
+    color: ${colors.black};
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+  }
 `;
