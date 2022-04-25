@@ -8,10 +8,10 @@ export const Destaque = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1em 0;
+  margin: 0.5em 0;
 
   > h1 {
-    width: 85%;
+    width: 80%;
     font-size: 26px;
     font-family: ${colors.titles};
     color: ${colors.red};
@@ -19,7 +19,7 @@ export const Destaque = styled.div`
   }
 
   > div {
-    width: 85%;
+    width: 82%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 23%);
