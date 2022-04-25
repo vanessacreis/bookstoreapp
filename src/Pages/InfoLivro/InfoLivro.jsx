@@ -1,6 +1,7 @@
 import * as S from "./infolivro.js";
 import Div1 from "../../Components/Container01_InfoLivro/Index.jsx";
-import Div2 from "../../Components/Container02_InfoLivro/Index.jsx"
+import Div2 from "../../Components/Container02_InfoLivro/Index.jsx";
+import Footer from "../../Components/Footer/Footer.jsx"
 function SobreOLivro(){
     return(
         <S.Main>
