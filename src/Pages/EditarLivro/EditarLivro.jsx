@@ -1,15 +1,16 @@
 import React from "react";
 // import Header from "../../Components/Header.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
-import Input from "../../Components/Input/Input.jsx";
+import Formulario from "../../Components/Formulario/Formulario.jsx";
+import FormularioSecundario from "../../Components/FormularioSecundario/FormularioSecundario.jsx";
+import * as S from "./EditarLivro";
 
 export default function EditarLivro() {
   return (
-    <section>
-      <form action="">
-        <Input />
-      </form>
+    <S.EditarLivro>
+      <FormularioSecundario />
+      <Formulario />
       <Footer />
-    </section>
+    </S.EditarLivro>
   );
 }
