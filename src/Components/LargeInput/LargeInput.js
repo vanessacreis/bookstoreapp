@@ -6,6 +6,10 @@ export const LargeInput = styled.input`
   border-top: none;
   border-right: none;
   border-left: none;
+  background-color: "white";
+
   color: ${colors.black};
   font-size: ${colors.text};
+  /* Adapt the colors based on primary prop */
+  background-color: ${(props) => (props.color ? colors.contrast : "white")};
 `;

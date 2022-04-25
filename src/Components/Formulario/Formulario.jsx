@@ -7,7 +7,7 @@ const Formulario = (name, onchange, type, value, placeholder) => {
   return (
     <S.Formulario>
       <Input />
-      <LargeInput />
+      <LargeInput primary />
     </S.Formulario>
   );
 };
