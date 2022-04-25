@@ -17,7 +17,7 @@ function Div2 (){
     <S.AreaDoLivreiro>
         <h2>Funcionalidades para livreiros</h2>
         <p></p>
-        <button></button>
+        <S.Buttons>Excluir</S.Buttons> <S.Buttons>Editar</S.Buttons>
     </S.AreaDoLivreiro>
     </div></S.Pai>
 );
