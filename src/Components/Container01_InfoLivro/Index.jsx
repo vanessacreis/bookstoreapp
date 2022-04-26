@@ -1,16 +1,17 @@
 import React from "react";
 import * as S from "./index.js"
 
-function Div1(){
+function Div1({livro}){
+
     return(<S.ColunaPai>
          <S.Elementos>
         <ul type="">
-        <img src="https://miro.medium.com/max/1400/0*xRkytAftnlGPo3jK.jpg"></img>
-        <li>Editora:</li>
-        <li>Genero:</li>
-        <li>Páginas:</li>
-        <li>País:</li>
-        <li>Ano:</li>
+        <img src={livro.imagem}></img>
+        <li>Editora:{livro.Publisher}</li>
+        <li>Genero:{livro.Genre}</li>
+        <li>Páginas:{livro.Pages}</li>
+        <li>Idioma:{livro.Language}</li>
+        <li>Ano:{livro.Year}</li>
         </ul>
     </S.Elementos>
     </S.ColunaPai>);}
