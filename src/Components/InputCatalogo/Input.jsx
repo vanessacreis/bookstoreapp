@@ -1,10 +1,14 @@
 import React from "react";
 import BotaoPesquisa from "../BotaoCatalogo/BotaoPesquisa.jsx";
 import styles from "./Input.module.css";
-function Input() {
+function Input(props) {
   return (
     <div className={styles.divInput}>
-      <input className={styles.intupCatalogo} type="text" />
+      <input
+        onChange={props.onChange}
+        className={styles.intupCatalogo}
+        type="text"
+      />
       <BotaoPesquisa />
     </div>
   );
