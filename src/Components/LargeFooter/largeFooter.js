@@ -9,7 +9,6 @@ export const Footer = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  position: absolute;
 
   .separador {
     width: 70%;
