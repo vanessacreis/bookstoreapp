@@ -4,7 +4,7 @@ import * as S from "./boxLogo.js";
 const BoxLogo = () => {
   return (
     <S.Box>
-      <img src="/assets/imgs/logo-branco.svg" alt="" />
+      <img src="/assets/imgs/livraria-vermelho.svg" alt="" />
     </S.Box>
   );
 };
