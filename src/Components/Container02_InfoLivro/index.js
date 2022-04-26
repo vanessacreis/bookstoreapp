@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../Style/globalStyle.js";
 export const Pai = styled.div`display: grid;
-padding: 0px 0px 0px; bottom: 0px; 
+padding: 0px 0px 0px; bottom: 0px; margin-right: 3%;
     >.org2 {
         display: grid; align-content: center; 
         justify-content: center }
