@@ -7,5 +7,8 @@ export const Input = styled.input`
   border-right: none;
   border-left: none;
   color: ${colors.black};
-  font-size: ${colors.text};
+  font-family: ${colors.text};
+  background-color: transparent;
+  font-size: 15px;
+  padding: 5px;
 `;

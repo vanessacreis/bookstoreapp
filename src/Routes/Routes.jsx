@@ -12,7 +12,7 @@ const Routes = () => {
       <Header />
       <Switch>
         <Route path="/" element={<Home />} />
-        <Route path="/editar" element={<EditarLivro />} />
+        <Route path="/editar/:id" element={<EditarLivro />} />
       </Switch>
     </BrowserRouter>
   );

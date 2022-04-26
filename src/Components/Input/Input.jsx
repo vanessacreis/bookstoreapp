@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./Input.js";
 
-const Input = (name, onchange, type, value, placeholder) => {
+const Input = ({ name, value, onchange, placeholder, type }) => {
   return (
     <div>
       <S.Input
