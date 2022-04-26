@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
-import "./Livreiro.css";
+import styles from "./Livreiro.module.css";
+import entrar from "./Botao";
 
 function initialState() {
   return { user: "", password: "" };
@@ -19,12 +20,12 @@ const UserLogin = () => {
   }
 
   return (
-    <div className="user-login">
-      <h1 className="user-login__title">
-        LOGO DA <br></br> LIVRARIA
+    <div className={styles.userLogin}>
+      <h1 className={styles.userLoginTitle}>
+        LOGO DA <br></br>LIVRARIA
       </h1>
       <form autoComplete="nope">
-        <div className="user-login__form-control">
+        <div className={styles.userLoginFormControl}>
           <input
             id="nomeCargo"
             type="text"
@@ -35,7 +36,7 @@ const UserLogin = () => {
           />
           <label htmlFor="nomeCargo">Cargo</label>
         </div>
-        <div className="user-login__form-control">
+        <div className={styles.userLoginFormControl}>
           <input
             id="matricula"
             type="text"
@@ -46,6 +47,9 @@ const UserLogin = () => {
           <label htmlFor="matricula">Matrícula</label>
         </div>
       </form>
+      <button className={styles.entrar} onClick={entrar}>
+        Entrar
+      </button>
     </div>
   );
 };
