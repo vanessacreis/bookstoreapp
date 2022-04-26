@@ -8,8 +8,7 @@ export const Footer = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: absolute;
-  bottom: 0;
+  flex-shrink: 0;
 `;
 
 export const Copyright = styled.div`

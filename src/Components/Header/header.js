@@ -9,6 +9,8 @@ export const Header = styled.header`
   align-items: center;
   justify-content: flex-end;
   gap: 25px;
+  position: sticky;
+  z-index: 2;
 
   .nav_link {
     color: ${colors.white};
