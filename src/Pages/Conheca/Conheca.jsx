@@ -1,6 +1,8 @@
 import React from "react";
 import Carousel from "../../Components/Carousel/Carousel.jsx";
 import LargeFooter from "../../Components/LargeFooter/LargeFooter.jsx";
+import Mapa from "../../Components/Mapa/Mapa.jsx";
+import Newsletter from "../../Components/Newsletter/Newsletter.jsx";
 import * as S from "./conheca.js";
 
 const Conheca = () => {
@@ -25,7 +27,16 @@ const Conheca = () => {
             repellat consequuntur iste, hic nesciunt pariatur iusto eos sit sint
             ipsam nemo laborum.
           </p>
+          <S.divRota />
         </S.Historia>
+        <S.Viagem>
+          <Newsletter />
+          <S.Mapa>
+            <h1>Veja por onde já passamos</h1>
+            <p>hic nesciunt pariatur iusto eos sit sint ipsam nemo laborum.</p>
+            <Mapa />
+          </S.Mapa>
+        </S.Viagem>
       </S.Container>
       <LargeFooter />
     </>
