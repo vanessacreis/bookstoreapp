@@ -7,54 +7,54 @@ import "slick-carousel/slick/slick-theme.css";
 const Carousel = () => {
   const settings = {
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     infinite: true,
     speed: 700,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
   };
 
   return (
     <S.Container>
       <Slider {...settings}>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-1.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-1.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-2.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-2.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-3.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-3.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-4.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-4.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-5.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-5.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-6.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-6.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-7.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-7.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-8.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-8.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-9.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-9.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-10.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-10.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-11.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-11.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-12.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-12.jpg" alt="Imagem do carrossel" />
         </div>
-        <div className="pic">
-          <img src="/assets/imgs/carousel-13.jpg" alt="" />
+        <div>
+          <img src="/assets/imgs/carousel-13.jpg" alt="Imagem do carrossel" />
         </div>
       </Slider>
     </S.Container>
