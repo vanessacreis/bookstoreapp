@@ -6,6 +6,7 @@ import * as S from "./header.js";
 const Header = () => {
   return (
     <S.Header>
+      <hr />
       <NavLink
         to="/"
         className={({ isActive }) => `nav_link${isActive ? " active" : ""}`}
@@ -30,6 +31,7 @@ const Header = () => {
       >
         Equipe
       </NavLink>
+      <hr />
       <BTNLivreiro />
     </S.Header>
   );
