@@ -1,27 +1,13 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { api } from "../../Services/Api.js";
-import styles from "./ExibirLivros.module.css";
+import * as S from "./exibirLivro.js";
 
-function ExibirLivros() {
-  const [livro, setLivro] = useState([]);
-  useEffect(() => {
-    api.get("/books").then((response) => {
-      setLivro(response.data.books);
-      console.log(livro);
-    });
-  });
+function ExibirLivros(props) {
   return (
-    <section className={styles.conteudo__principal}>
-      {livro.map((item) => {
-        return (
-          <div className={styles.card}>
-            <img src={item.imagem} alt="" />
-            <p>{item.Name}</p>
-          </div>
-        );
-      })}
-    </section>
+    <S.Card>
+      <img src={props.imagem} alt="" />
+      <p>{props.Name}</p>
+      <p>Autor: {props.Writer}</p>
+    </S.Card>
   );
 }
 
