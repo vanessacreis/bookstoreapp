@@ -24,6 +24,7 @@ export const Login = styled.div`
 
   > img {
     width: 400px;
+    margin-top: 100px;
     filter: drop-shadow(5px 5px 10px ${colors.white});
   }
 `;
