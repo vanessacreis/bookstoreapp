@@ -5,6 +5,7 @@ import Footer from "../Components/Footer/Footer.jsx";
 import Home from "../Pages/Home/Home.jsx";
 import UserLogin from "../Pages/Livreiro/Livreiro.jsx";
 import { GlobalStyle } from "../Style/globalStyle.js";
+import Cards from "../Pages/Equipe/Equipe.jsx";
 
 const Routes = () => {
   return (
@@ -14,6 +15,7 @@ const Routes = () => {
       <Switch>
         <Route path="/" element={<Home />} />
         <Route path="/livreiro" element={<UserLogin />} />
+        <Route path="/equipe" element={<Cards />} />
       </Switch>
       <Footer />
     </BrowserRouter>

@@ -1,0 +1,17 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: none !important;
+}
+
+.card {
+  position: absolute;
+  width: 225px;
+  height: 250px;
+  left: 79px;
+  top: 211px;
+  background: #d9bfa0;
+  border-radius: 10px;
+}

@@ -1,7 +1,6 @@
-import { useState } from "react";
-import React from "react";
+import React, { useState, Component } from "react";
 import styles from "./Livreiro.module.css";
-import entrar from "./Botao";
+import Navegar from "./Botao";
 
 function initialState() {
   return { user: "", password: "" };
@@ -26,15 +25,14 @@ const UserLogin = () => {
       </h1>
       <form autoComplete="nope">
         <div className={styles.userLoginFormControl}>
-          <input
-            id="nomeCargo"
-            type="text"
-            name="nomeDoCargo"
-            autoComplete="off"
-            onChange={onChange}
-            value={values.nomeCargo}
-          />
-          <label htmlFor="nomeCargo">Cargo</label>
+          <label className="nomeCargo">
+            Escolha seu cargo: <br />
+            <select>
+              <option value="estoquista">Estoquista</option>
+              <option value="gerente">Gerente</option>
+              <option value="livreiro">Livreiro</option>
+            </select>
+          </label>
         </div>
         <div className={styles.userLoginFormControl}>
           <input
@@ -47,9 +45,7 @@ const UserLogin = () => {
           <label htmlFor="matricula">Matrícula</label>
         </div>
       </form>
-      <button className={styles.entrar} onClick={entrar}>
-        Entrar
-      </button>
+      <Navegar />
     </div>
   );
 };
