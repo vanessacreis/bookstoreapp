@@ -1,17 +1,41 @@
 import React from "react";
-import styles from "./Equipe.module.css";
+import EquipeCard from "../../Components/EquipeCard/EquipeCard.jsx";
+import * as S from "./equipe.js";
 
 const Cards = () => {
   return (
-    <div className={styles.card}>
-      <img className={styles.cardImg} alt="Foto-Pedro" />
-      <div className={styles.cardBody}>
-        <h5 className={styles.cardTitle}>Pedro Santos</h5>
-        <p className={styles.cardText}>
-          Lorem ipsum dolor sit amet consectetur
-        </p>
+    <S.Container>
+      <div className="cards">
+        <div className="cima">
+          <EquipeCard
+            nome="Bruno Sá"
+            cargo="Lorem ipsum dolor sit amet"
+            imagem="/assets/imgs/Icon-Bruno.jpg"
+          />
+          <EquipeCard nome="Luziane" cargo="Lorem ipsum dolor sit amet" />
+          <EquipeCard
+            nome="Pedro Silva"
+            cargo="Lorem ipsum dolor sit amet"
+            imagem="/assets/imgs/Icon-Pedro.png"
+          />
+        </div>
+        <div className="baixo">
+          <EquipeCard
+            nome="Thiago Pereira"
+            cargo="Lorem ipsum dolor sit amet"
+          />
+          <EquipeCard
+            nome="Vanessa Reis"
+            cargo="Lorem ipsum dolor sit amet"
+            imagem="/assets/imgs/Icon-Van.jpeg"
+          />
+        </div>
       </div>
-    </div>
+      <div className="logo">
+        <img src="/assets/imgs/livraria-vermelho.svg" alt="" />
+        <p>Conheça nosso time</p>
+      </div>
+    </S.Container>
   );
 };
 
