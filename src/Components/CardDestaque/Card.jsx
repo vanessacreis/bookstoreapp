@@ -4,9 +4,9 @@ import * as S from "./card.js";
 const Card = (props) => {
   return (
     <S.Card>
-      <img src="/assets/imgs/milk-and-honey.jpg" alt="" />
-      <p className="title">Milk and Honey</p>
-      <p className="writer">Rupi Kaur</p>
+      <img src={props.imagem} alt="Capa do livro" />
+      <p className="title">{props.name}</p>
+      <p className="writer">{props.writer}</p>
     </S.Card>
   );
 };

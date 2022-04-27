@@ -28,6 +28,8 @@ export const Card = styled.div`
     font-weight: bolder;
     color: ${colors.black};
     margin-top: 10px;
+    word-break: break-word;
+    text-align: center;
 
     &::selection {
       background-color: ${colors.contrast}80;
