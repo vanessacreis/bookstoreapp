@@ -1,14 +1,13 @@
 import React from "react";
-// import Header from "../../Components/Header.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
-import FormInfoLivro from "../../Components/FormInfoLivro/FormInfoLivro.jsx";
+import FormIncluir from "../../Components/FormIncluir/FormIncluir.jsx";
 import * as S from "../EditarLivro/EditarLivro.js";
 
 export default function IncluirLivro() {
   return (
     <>
       <S.EditarLivro>
-        <FormInfoLivro />;
+        <FormIncluir />;
       </S.EditarLivro>
 
       <Footer />
