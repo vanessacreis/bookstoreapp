@@ -27,17 +27,17 @@ function Catalogo() {
           .filter((item) => {
             if (input === "") {
               return item;
-            } else if (item.Name.toLowerCase().includes(input.toLowerCase())) {
+            } else if (item.name.toLowerCase().includes(input.toLowerCase())) {
               return item;
             }
           })
           .map((item) => {
             return (
               <ExibirLivros
-                key={item.ID_Name}
+                key={item.ID_books}
                 imagem={item.imagem}
-                Name={item.Name}
-                Writer={item.Writer}
+                Name={item.name}
+                Writer={item.writer}
               />
             );
           })}
