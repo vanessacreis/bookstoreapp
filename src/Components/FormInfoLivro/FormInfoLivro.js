@@ -2,13 +2,73 @@ import styled from "styled-components";
 import { colors } from "../../Style/globalStyle";
 
 export const Formulario = styled.form`
-  width: 65%;
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 20px;
-  font-family: ${colors.text};
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  .sectionInfolivro {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: ${colors.text};
+    margin-left: 900px;
+  }
+
+  .containerInfoLivro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .divTextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  button {
+    margin-top: 20px;
+  }
+  // form publi
+  .sectionInfoPubli {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: ${colors.contrast};
+  }
+  img {
+    opacity: 50%;
+    display: flex;
+    align-self: center;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  label {
+    width: 75px;
+    font-family: ${colors.text};
+  }
+
+  //infor livro
+  input {
+    width: 50%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: ${colors.black};
+    font-family: ${colors.text};
+    background-color: transparent;
+    font-size: 15px;
+    padding: 5px;
+  }
 
   .divTextArea {
     display: flex;
