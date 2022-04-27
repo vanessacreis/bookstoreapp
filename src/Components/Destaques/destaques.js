@@ -26,6 +26,10 @@ export const Destaque = styled.div`
     gap: 3%;
   }
 
+  .link {
+    text-decoration: none;
+  }
+
   @media (max-width: 600px) {
     height: auto;
     > div {
