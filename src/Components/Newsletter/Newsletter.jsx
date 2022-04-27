@@ -1,7 +1,11 @@
 import React from "react";
 import * as S from "./newsletter.js";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Newsletter = () => {
+  const notify = () => toast("Deu certo, parabéns");
+
   return (
     <S.News>
       <h1>Quer acompanhar a gente nessa viagem?</h1>
@@ -24,7 +28,10 @@ const Newsletter = () => {
             Receber notícias e informações de Livraria na Van?
           </label>
         </div>
-        <button>Inscrever</button>
+        <button type="reset" onClick={notify}>
+          Inscrever
+        </button>
+        <ToastContainer/>
       </S.Form>
     </S.News>
   );
