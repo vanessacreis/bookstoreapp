@@ -2,7 +2,7 @@ import React from "react";
 import EquipeCard from "../../Components/EquipeCard/EquipeCard.jsx";
 import * as S from "./equipe.js";
 
-const Cards = () => {
+const Equipe = () => {
   return (
     <S.Container>
       <div className="cards">
@@ -39,4 +39,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Equipe;
