@@ -1,29 +1,45 @@
 import React from "react";
 // import Header from "../../Components/Header.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
-import FormInfoLivro from "../../Components/FormInfoLivro/FormInfoLivro.jsx";
 import FormInfoPubli from "../../Components/FormInfoPubli/FormInfoPubli.jsx";
-import * as S from "./EditarLivro";
+import * as S from "./EditarLivro.js";
 import { api } from "../../Services/Api.js";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 export default function EditarLivro() {
   const { id } = useParams();
   const [livro, setLivro] = useState([]);
-  console.log(livro);
-  useEffect(() => {
-    api.get("books/book/" + id).then((response) => {
+  const navigate = useNavigate();
+  // useEffect(() => {
+  //   api.get("books/book/" + id).then((response) => {
+  //     console.log(response);
+  //     setLivro(response.data.book[0]);
+  //   });
+  // }, [id]);
+
+  function handleOnChange(e) {
+    setLivro({ ...livro, [e.target.name]: e.target.value });
+    console.log(livro);
+  }
+  function handleUpdate() {
+    api.put("books/book/" + id, livro).then((response) => {
       console.log(response);
-      setLivro(response.data.book[0]);
+      setLivro(response.data);
+      navigate("/");
     });
-  }, [id]);
+  }
 
   return (
     <>
       <S.EditarLivro>
-        <FormInfoPubli />
-        <FormInfoLivro key={id} livros={livro} />;
+        <FormInfoPubli
+          key={id}
+          id={id}
+          // onChange={handleOnChange}
+          // onClick={() => handleUpdate()}
+        />
+        ;
       </S.EditarLivro>
 
       <Footer />

@@ -6,7 +6,7 @@ const Input = ({ name, value, onchange, placeholder, type }) => {
     <div>
       <S.Input
         name={name}
-        onchange={onchange}
+        onChange={onchange}
         type={type}
         value={value}
         placeholder={placeholder}
