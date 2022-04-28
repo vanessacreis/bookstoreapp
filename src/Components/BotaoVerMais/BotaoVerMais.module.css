@@ -1,0 +1,16 @@
+.button {
+  width: 250px;
+  height: 50px;
+  background: #d9bfa0;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
