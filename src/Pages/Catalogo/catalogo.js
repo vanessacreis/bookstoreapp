@@ -5,7 +5,7 @@ export const Container = styled.main`
   width: 100%;
   height: auto;
   min-height: 180vh;
-  background-image: url(/assets/imgs/BG-Catalogo.svg);
+  background-image: url(/assets/imgs/bg-catalogo.png);
   display: flex;
   flex-direction: column;
   align-items: center;

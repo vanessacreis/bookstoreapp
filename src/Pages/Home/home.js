@@ -15,9 +15,9 @@ export const Container = styled.main`
 export const Logo = styled.section`
   width: 100%;
   height: 70vh;
-  background-image: url(/assets/imgs/bg-home.svg);
+  background-image: url(/assets/imgs/bg-home.png);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   align-items: center;
 `;

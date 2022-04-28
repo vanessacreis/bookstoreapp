@@ -4,7 +4,7 @@ import { colors } from "../../Style/globalStyle.js";
 export const Container = styled.main`
   width: 100%;
   height: calc(100vh - 125px);
-  background-image: url(/assets/imgs/BG-Livreiro.svg);
+  background-image: url(/assets/imgs/bg-livreiro.png);
   background-repeat: no-repeat;
 
   @media (max-width: 700px) {

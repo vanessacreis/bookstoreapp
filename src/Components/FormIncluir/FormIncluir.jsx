@@ -43,11 +43,7 @@ const FormIncluir = () => {
     <S.Formulario onSubmit={handleSubmit(Api)}>
       <S.Coluna>
         <img
-          src={
-            !!livro.imagem
-              ? livro.imagem
-              : "https://hilnethcorreia.com.br/wp-content/uploads/2018/04/livros-1.jpg"
-          }
+          src={!!livro.imagem ? livro.imagem : "/assets/imgs/img-livro.png"}
           alt=""
         />
         <fieldset>
