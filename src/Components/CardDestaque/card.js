@@ -11,22 +11,26 @@ export const Card = styled.div`
 
   > img {
     width: 80%;
-    height: 70%;
+    height: 65%;
     object-fit: cover;
     border-radius: 10px;
     opacity: 0.8;
+    box-shadow: 10px 5px 10px ${colors.black}90;
 
     &:hover {
-      transition: all 1s;
-      box-shadow: 2px 2px 10px ${colors.orange};
+      transition: all 1.5s;
+      box-shadow: 10px 5px 10px ${colors.red}90;
       opacity: 1;
     }
   }
 
   .title {
-    font-size: 15px;
-    font-weight: bolder;
+    width: 70%;
     color: ${colors.black};
+    font-family: ${colors.titles};
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
     margin-top: 10px;
     word-break: break-word;
     text-align: center;

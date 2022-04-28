@@ -3,7 +3,7 @@ import { colors } from "../../Style/globalStyle.js";
 
 export const Destaque = styled.div`
   width: 100%;
-  height: 75vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
