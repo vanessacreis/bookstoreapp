@@ -4,27 +4,42 @@ import { useNavigate } from "react-router-dom";
 import * as S from "./FormEditar.js";
 
 const FormEditar = ({ id }) => {
-  const [livro, setLivro] = useState([]);
+  const [livro, setLivro] = useState({});
+  const [load, setLoad] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
-    api.get("books/book/" + id).then((response) => {
-      setLivro(response.data.book[0]);
-    });
-  }, [id]);
+    api
+      .get("books/book/" + id)
+      .then((response) => {
+        setLivro(response.data.book[0]);
+      })
+      .catch((err) => console.log(err));
+  }, [load]);
 
-  function handleUpdate() {
-    api.put("books/book/" + id, livro).then((response) => {
-      setLivro(response.data.book);
-      navigate("/");
-    });
+  function handleUpdate(e) {
+    e.preventDefault();
+    console.log(livro);
+    api
+      .put("books/book/" + id, livro)
+      .then((response) => {
+        console.log(response);
+        navigate("/");
+
+        setLoad(!load);
+      })
+      .catch((err) => console.log(err));
   }
 
-  function handleDelete() {
-    api.delete("books/book/" + id, livro).then((response) => {
-      setLivro(response.data.book);
-      navigate("/");
-    });
+  function handleDelete(e) {
+    e.preventDefault();
+
+    api
+      .delete("books/book/" + id, livro)
+      .then((response) => {
+        navigate("/");
+      })
+      .catch((err) => console.log(err));
   }
 
   function handleOnChange(e) {
@@ -143,14 +158,10 @@ const FormEditar = ({ id }) => {
               type="text"
             />
             <S.Label htmlFor="">Descrição</S.Label>
-             {/* Lembrar de tirar essa div caso o botão excluir saia */}
-            <div className="divBtn"> 
-              <S.Botao type="submit" onClick={handleUpdate}>
-                Pronto
-              </S.Botao>
-              <S.Botao type="submit" onClick={() => handleDelete()}>
-                Excluir
-              </S.Botao>
+            {/* Lembrar de tirar essa div caso o botão excluir saia */}
+            <div className="divBtn">
+              <S.Botao onClick={handleUpdate}>Pronto</S.Botao>
+              <S.Botao onClick={handleDelete}>Excluir</S.Botao>
             </div>
           </fieldset>
         </S.Caixa>
