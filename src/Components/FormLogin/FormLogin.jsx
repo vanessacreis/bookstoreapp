@@ -3,7 +3,7 @@ import Navegar from "../BTNLogin/Botao.jsx";
 import { useState } from "react";
 import * as S from "./formLogin.js";
 
-const FormLogin = () => {
+const FormLogin = ({ login, setLogin }) => {
   const [carrerValue, setCarrerValue] = useState("");
   const [registrationValue, setRegistrationValue] = useState("");
 
@@ -16,12 +16,7 @@ const FormLogin = () => {
 
   function handleClick(e) {
     e.preventDefault();
-    if (!carrerValue || registrationValue === 6) {
-      alert("erro");
-    } else {
-      localStorage.setItem("carrer", JSON.stringify(carrerValue));
-      localStorage.setItem("registration", JSON.stringify(registrationValue));
-    }
+    setLogin(true);
   }
 
   return (
@@ -39,15 +34,14 @@ const FormLogin = () => {
         <option value="Vendedor">Vendedor</option>
         <option value="Supervisor">Supervisor de logistíca</option>
       </select>
-      <h1>{carrerValue}</h1>
       <input
         id="matricula"
-        type="text"
+        type="number"
         name="matricula"
         placeholder="Insira sua matricula"
         onChange={handleOnChange}
       />
-      <Navegar type="submit" onClick={handleClick} />
+      <button onClick={handleClick}>ENtrar</button>
     </S.Form>
   );
 };
