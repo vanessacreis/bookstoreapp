@@ -19,6 +19,16 @@ export const Copyright = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  > img {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+  }
+
+  .logo {
+    margin-right: 15px;
+  }
 `;
 
 export const Redes = styled.div`
