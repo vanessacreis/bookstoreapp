@@ -7,6 +7,8 @@ import Catalogo from "../Pages/Catalogo/Catalogo.jsx";
 import UserLogin from "../Pages/Livreiro/Livreiro.jsx";
 import Equipe from "../Pages/Equipe/Equipe.jsx";
 import Info from "../Pages/Info/Info.jsx";
+import EditarLivro from "../Pages/EditarLivro/EditarLivro.jsx";
+import IncluirLivro from "../Pages/IncluirLivro/IncluirLivro.jsx";
 
 const Routes = () => {
   return (
@@ -19,6 +21,8 @@ const Routes = () => {
         <Route path="/equipe" element={<Equipe />} />
         <Route path="/info/:id" element={<Info />} />
         <Route path="/catalogo" element={<Catalogo />} />
+        <Route path="/editar/:id" element={<EditarLivro />} />
+        <Route path="/incluir" element={<IncluirLivro />} />
       </Switch>
     </BrowserRouter>
   );
