@@ -22,16 +22,14 @@ export const GlobalStyle = createGlobalStyle`
       width: 10px;
       height: 8px;
     }
-
     ::-webkit-scrollbar-track {
       box-shadow: inset 0 0 5px ${colors.white};
     }
-
     ::-webkit-scrollbar-thumb {
       background: ${colors.orange};
     }
-    
   }
+
   html,body{
     width: 100%;
     min-height: 100vh;

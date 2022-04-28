@@ -20,6 +20,10 @@ const LargeFooter = () => {
       </S.Redes>
       <hr className="separador" />
       <S.Copyright>
+        <div>
+          <img src="/assets/icons/minicon.png" alt="" />
+          <p>Livraria na Van</p>
+        </div>
         <p>&copy; Todos os direitos reservados</p>
       </S.Copyright>
     </S.Footer>

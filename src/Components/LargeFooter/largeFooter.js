@@ -43,8 +43,25 @@ export const Copyright = styled.div`
   width: 50%;
   height: 40%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > p {
+      font-size: 15px;
+    }
+
+    > img {
+      width: 45px;
+      height: 45px;
+      margin-right: 15px;
+    }
+  }
+
   p {
     color: ${colors.white};
     font-family: ${colors.titles};

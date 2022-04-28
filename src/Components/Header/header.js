@@ -12,6 +12,10 @@ export const Header = styled.header`
   position: sticky;
   z-index: 2;
 
+  > hr {
+    width: 70px;
+  }
+
   .nav_link {
     color: ${colors.white};
     font-family: ${colors.text};
