@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import BTNLivreiro from "../BTNLivreiro/BTNLivreiro.jsx";
 import * as S from "./header.js";
 
-const Header = () => {
+const Header = ({ login, setLogin }) => {
+  function handleSair() {
+    console.log("oi");
+    setLogin(false);
+  }
+
   return (
     <S.Header>
       <hr />
@@ -31,8 +36,9 @@ const Header = () => {
       >
         Equipe
       </NavLink>
+      {login && "adicionar"}
       <hr />
-      <BTNLivreiro />
+      {!login ? <BTNLivreiro /> : <button onClick={handleSair}>Sair</button>}
     </S.Header>
   );
 };
