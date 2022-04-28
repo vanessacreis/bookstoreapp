@@ -5,7 +5,7 @@ import Header from "../Components/Header/Header.jsx";
 import Home from "../Pages/Home/Home.jsx";
 import Conheca from "../Pages/Conheca/Conheca.jsx";
 import Catalogo from "../Pages/Catalogo/Catalogo.jsx";
-import UserLogin from "../Pages/Livreiro/Livreiro.jsx";
+import Livreiro from "../Pages/Livreiro/Livreiro.jsx";
 import Equipe from "../Pages/Equipe/Equipe.jsx";
 import Info from "../Pages/Info/Info.jsx";
 import EditarLivro from "../Pages/EditarLivro/EditarLivro.jsx";
@@ -25,7 +25,7 @@ const Routes = () => {
         <Route path="/equipe" element={<Equipe />} />
         <Route
           path="/livreiro"
-          element={<UserLogin login={login} setLogin={setLogin} />}
+          element={<Livreiro login={login} setLogin={setLogin} />}
         />
         <Route path="/info/:id" element={<Info login={login} />} />
         <Route path="/editar/:id" element={<EditarLivro />} />

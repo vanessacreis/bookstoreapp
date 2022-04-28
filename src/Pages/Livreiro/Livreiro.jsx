@@ -2,7 +2,7 @@ import * as S from "./livreiro.js";
 import Footer from "../../Components/Footer/Footer.jsx";
 import FormLogin from "../../Components/FormLogin/FormLogin.jsx";
 
-const UserLogin = ({login, setLogin}) => {
+const Livreiro = ({ login, setLogin }) => {
   return (
     <>
       <S.Container>
@@ -16,4 +16,4 @@ const UserLogin = ({login, setLogin}) => {
   );
 };
 
-export default UserLogin;
+export default Livreiro;
