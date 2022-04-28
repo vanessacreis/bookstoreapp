@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes as Switch, Route } from "react-router-dom";
 import { GlobalStyle } from "../Style/globalStyle.js";
 import Header from "../Components/Header/Header.jsx";
-import Home from "../Pages/Home/Home";
+import Home from "../Pages/Home/Home.jsx";
+import Conheca from "../Pages/Conheca/Conheca.jsx";
 import Catalogo from "../Pages/Catalogo/Catalogo.jsx";
 import UserLogin from "../Pages/Livreiro/Livreiro.jsx";
 import Equipe from "../Pages/Equipe/Equipe.jsx";
@@ -17,10 +18,11 @@ const Routes = () => {
       <Header />
       <Switch>
         <Route path="/" element={<Home />} />
-        <Route path="/livreiro" element={<UserLogin />} />
-        <Route path="/equipe" element={<Equipe />} />
-        <Route path="/info/:id" element={<Info />} />
+        <Route path="/conheca" element={<Conheca />} />
         <Route path="/catalogo" element={<Catalogo />} />
+        <Route path="/equipe" element={<Equipe />} />
+        <Route path="/livreiro" element={<UserLogin />} />
+        <Route path="/info/:id" element={<Info />} />
         <Route path="/editar/:id" element={<EditarLivro />} />
         <Route path="/incluir" element={<IncluirLivro />} />
       </Switch>
