@@ -10,7 +10,7 @@ export default function EditarLivro() {
   return (
     <>
       <S.EditarLivro>
-        <FormEditar key={id} id={id} />;
+        <FormEditar id={id} />;
       </S.EditarLivro>
       <Footer />
     </>
