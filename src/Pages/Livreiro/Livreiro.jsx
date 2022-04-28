@@ -1,5 +1,6 @@
 import React from "react";
 import * as S from "./livreiro.js";
+import Footer from "../../Components/Footer/Footer.jsx";
 import FormLogin from "../../Components/FormLogin/FormLogin.jsx";
 
 const UserLogin = () => {
@@ -11,6 +12,7 @@ const UserLogin = () => {
           <FormLogin />
         </S.Login>
       </S.Container>
+      <Footer />
     </>
   );
 };
