@@ -155,10 +155,9 @@ const FormEditar = ({ id }) => {
               type="text"
             />
             <S.Label htmlFor="">Descrição</S.Label>
-            {/* Lembrar de tirar essa div caso o botão excluir saia */}
             <div className="divBtn">
-              <S.Botao onClick={handleUpdate}>Pronto</S.Botao>
               <S.Botao onClick={handleDelete}>Excluir</S.Botao>
+              <S.Botao onClick={handleUpdate}>Pronto</S.Botao>
             </div>
           </fieldset>
         </S.Caixa>
