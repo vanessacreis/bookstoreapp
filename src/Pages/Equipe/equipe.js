@@ -4,7 +4,7 @@ import { colors } from "../../Style/globalStyle.js";
 export const Container = styled.div`
   width: 100%;
   height: calc(100vh - 125px);
-  background-image: url(/assets/imgs/BG-Livros.svg);
+  background-image: url(/assets/imgs/bg-livros.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
