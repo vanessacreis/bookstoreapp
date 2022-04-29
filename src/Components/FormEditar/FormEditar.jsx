@@ -24,7 +24,7 @@ const FormEditar = ({ id }) => {
       .put("books/book/" + id, livro)
       .then((response) => {
         console.log(response);
-        navigate("/");
+        navigate(`/info/${id}`);
 
         setLoad(!load);
       })
