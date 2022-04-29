@@ -16,7 +16,7 @@ const Equipe = () => {
             />
             <EquipeCard nome="Luziane" cargo="Lorem ipsum dolor sit amet" />
             <EquipeCard
-              nome="Pedro Silva"
+              nome="Pedro Santos"
               cargo="Lorem ipsum dolor sit amet"
               imagem="/assets/imgs/Icon-Pedro.png"
             />
