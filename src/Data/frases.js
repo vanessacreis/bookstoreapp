@@ -15,7 +15,7 @@ export const frases = [
   },
   {
     frase: "Quem não tem amigo, mas tem um livro, tem uma estrada.",
-    autor: "Maria Carolina de Jesus",
+    autor: "Carolina Maria de Jesus",
   },
   {
     frase: "Sempre imaginei que o paraíso fosse uma espécie de biblioteca.",
