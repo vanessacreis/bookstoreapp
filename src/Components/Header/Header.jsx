@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import React from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import BTNLivreiro from "../BTNLivreiro/BTNLivreiro.jsx";
+import BTNLogout from "../BTNLogout/BTNLogout.jsx";
 import * as S from "./header.js";
 
 const Header = ({ login, setLogin }) => {
+  const navigate = useNavigate();
+
   function handleSair() {
-    console.log("oi");
     setLogin(false);
+    navigate("/");
   }
 
   return (
@@ -36,9 +39,16 @@ const Header = ({ login, setLogin }) => {
       >
         Equipe
       </NavLink>
-      {login && "adicionar"}
+      {login && (
+        <NavLink
+          to="/incluir"
+          className={({ isActive }) => `nav_link${isActive ? " active" : ""}`}
+        >
+          Incluir
+        </NavLink>
+      )}
       <hr />
-      {!login ? <BTNLivreiro /> : <button onClick={handleSair}>Sair</button>}
+      {!login ? <BTNLivreiro /> : <BTNLogout onClick={handleSair} />}
     </S.Header>
   );
 };
