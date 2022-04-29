@@ -1,11 +1,12 @@
 import React from "react";
-import Navegar from "../BTNLogin/Botao.jsx";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import * as S from "./formLogin.js";
 
 const FormLogin = ({ login, setLogin }) => {
   const [carrerValue, setCarrerValue] = useState("");
   const [registrationValue, setRegistrationValue] = useState("");
+  const navigate = useNavigate();
 
   function handleOnChange(e) {
     setRegistrationValue({
@@ -17,6 +18,7 @@ const FormLogin = ({ login, setLogin }) => {
   function handleClick(e) {
     e.preventDefault();
     setLogin(true);
+    navigate("/catalogo");
   }
 
   return (
@@ -41,7 +43,7 @@ const FormLogin = ({ login, setLogin }) => {
         placeholder="Insira sua matricula"
         onChange={handleOnChange}
       />
-      <button onClick={handleClick}>ENtrar</button>
+      <S.Botao onClick={handleClick}>Entrar</S.Botao>
     </S.Form>
   );
 };
