@@ -23,7 +23,7 @@ export const frases = [
   },
   {
     frase:
-      "Os livros não são feitos para alguém acredite neles, mas para serem submetidos à investigação. Quando consideramos um livro, não devemos perguntar o que diz, mas o que significa.",
+      "Os livros não são feitos para que alguém acredite neles, mas para serem submetidos à investigação. Quando consideramos um livro, não devemos perguntar o que diz, mas o que significa.",
     autor: "Umberto Eco",
   },
   {

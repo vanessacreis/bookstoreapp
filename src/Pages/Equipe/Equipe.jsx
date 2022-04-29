@@ -11,10 +11,14 @@ const Equipe = () => {
           <div className="cima">
             <EquipeCard
               nome="Bruno Sá"
-              cargo="Lorem ipsum dolor sit amet"
+              cargo="Supervisor de logística e dev fullstack"
               imagem="/assets/imgs/Icon-Bruno.jpg"
             />
-            <EquipeCard nome="Luziane" cargo="Lorem ipsum dolor sit amet" />
+            <EquipeCard
+              nome="Luziane Gering"
+              cargo="Estoquista e desenvolvedora front-end"
+              imagem="/assets/imgs/Icon-Luzi.jpeg"
+            />
             <EquipeCard
               nome="Pedro Santos"
               cargo="Lorem ipsum dolor sit amet"
@@ -24,11 +28,12 @@ const Equipe = () => {
           <div className="baixo">
             <EquipeCard
               nome="Thiago Pereira"
-              cargo="Lorem ipsum dolor sit amet"
+              cargo="Vendedor e dev fullstack"
+              imagem="/assets/imgs/Icon-Thiago.jpeg"
             />
             <EquipeCard
               nome="Vanessa Reis"
-              cargo="Lorem ipsum dolor sit amet"
+              cargo="Gerente e desenvolvedora front-end"
               imagem="/assets/imgs/Icon-Van.jpeg"
             />
           </div>
