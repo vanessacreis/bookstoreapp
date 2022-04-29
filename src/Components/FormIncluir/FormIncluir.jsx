@@ -23,7 +23,7 @@ const FormIncluir = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    // formState: { errors },
   } = useForm();
 
   const Api = (data) => {

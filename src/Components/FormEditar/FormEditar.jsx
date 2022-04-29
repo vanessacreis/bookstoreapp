@@ -15,7 +15,7 @@ const FormEditar = ({ id }) => {
         setLivro(response.data.book[0]);
       })
       .catch((err) => console.log(err));
-  }, [load]);
+  }, [id]);
 
   function handleUpdate(e) {
     e.preventDefault();
