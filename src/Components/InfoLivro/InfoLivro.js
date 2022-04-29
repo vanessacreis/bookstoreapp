@@ -38,6 +38,20 @@ export const Descricao = styled.section`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+
+  .editar {
+    width: 100px;
+    height: 30px;
+    background-color: ${colors.contrast};
+    font-family: ${colors.text};
+    font-size: 15px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    align-self: flex-start;
+    margin-left: 75px;
+    cursor: pointer;
+  }
 `;
 
 export const Texto = styled.div`
