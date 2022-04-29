@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import * as S from "./InfoLivro.js";
 
-function InfoLivro({ livro }) {
+function InfoLivro({ livro, login }) {
+  const navigate = useNavigate();
+
   return (
     <>
       <S.Coluna>
@@ -30,12 +33,21 @@ function InfoLivro({ livro }) {
           <h3>{livro.writer}</h3>
           <p>{livro.description}</p>
         </S.Texto>
-        <S.Reserve>
-          <p>R$ {livro.price}</p>
-          <button>
-            <a href="mailto:livraria@navan.com.br">Reserve</a>
+        {!login ? (
+          <S.Reserve>
+            <p>R$ {livro.price}</p>
+            <button>
+              <a href="mailto:livraria@navan.com.br">Reserve</a>
+            </button>
+          </S.Reserve>
+        ) : (
+          <button
+            onClick={() => navigate(`/editar/${livro.ID_books}`)}
+            className="editar"
+          >
+            Editar
           </button>
-        </S.Reserve>
+        )}
       </S.Descricao>
     </>
   );

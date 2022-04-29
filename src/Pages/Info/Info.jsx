@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import InfoLivro from "../../Components/InfoLivro/InfoLivro.jsx";
 
-function Info() {
+function Info({ login }) {
   const { id } = useParams();
   const [livro, setLivro] = useState([]);
   useEffect(() => {
@@ -18,7 +18,7 @@ function Info() {
   return (
     <>
       <S.Main>
-        <InfoLivro livro={livro} key={id} />
+        <InfoLivro livro={livro} login={login} />
       </S.Main>
       <Footer />
     </>
