@@ -60,6 +60,7 @@ const FormEditar = ({ id }) => {
             onChange={handleOnChange}
             type="text"
             className="input"
+            required
           />
         </fieldset>
         <fieldset>
@@ -70,6 +71,7 @@ const FormEditar = ({ id }) => {
             onChange={handleOnChange}
             type="text"
             className="input"
+            required
           />
         </fieldset>
         <fieldset>
@@ -80,6 +82,7 @@ const FormEditar = ({ id }) => {
             onChange={handleOnChange}
             type="text"
             className="input"
+            required
           />
         </fieldset>
         <fieldset>
@@ -90,6 +93,7 @@ const FormEditar = ({ id }) => {
             onChange={handleOnChange}
             type="text"
             className="input"
+            required
           />
         </fieldset>
         <fieldset>
@@ -100,6 +104,7 @@ const FormEditar = ({ id }) => {
             onChange={handleOnChange}
             type="text"
             className="input"
+            required
           />
         </fieldset>
         <fieldset>
@@ -110,6 +115,7 @@ const FormEditar = ({ id }) => {
             onChange={handleOnChange}
             type="text"
             className="input"
+            required
           />
         </fieldset>
         <fieldset>
@@ -120,6 +126,7 @@ const FormEditar = ({ id }) => {
             onChange={handleOnChange}
             type="number"
             className="input"
+            required
           />
         </fieldset>
       </S.Coluna>
@@ -133,6 +140,7 @@ const FormEditar = ({ id }) => {
               onChange={handleOnChange}
               type="text"
               className="input"
+              required
             />
             <S.Label htmlFor="">Título</S.Label>
             <input
@@ -141,6 +149,7 @@ const FormEditar = ({ id }) => {
               onChange={handleOnChange}
               type="text"
               className="input"
+              required
             />
             <S.Label htmlFor="">Autor</S.Label>
           </S.Titulo>

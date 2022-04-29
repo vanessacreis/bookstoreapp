@@ -20,11 +20,7 @@ const FormIncluir = () => {
 
   const navigate = useNavigate();
 
-  const {
-    register,
-    handleSubmit,
-    // formState: { errors },
-  } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const Api = (data) => {
     api
