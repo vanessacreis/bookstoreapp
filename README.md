@@ -47,6 +47,10 @@ npm install
 ```
 npm start
 ```
+- Abra o localhost em seu navegador
+```
+http://localhost:3000/
+```
 
 ---
 
