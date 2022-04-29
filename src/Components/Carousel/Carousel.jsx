@@ -7,9 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 const Carousel = () => {
   const settings = {
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     infinite: true,
-    speed: 700,
+    speed: 600,
     slidesToShow: 4,
     slidesToScroll: 1,
   };
