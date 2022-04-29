@@ -27,7 +27,7 @@ const Equipe = () => {
             <a href="https://www.linkedin.com/in/pedro-santos20/">
               <EquipeCard
                 nome="Pedro Santos"
-                cargo="Lorem ipsum dolor sit amet"
+                cargo="Livreiro e dev front-end"
                 imagem="/assets/imgs/Icon-Pedro.png"
               />
             </a>
