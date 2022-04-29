@@ -47,7 +47,15 @@ export const Texto = styled.div`
     width: 100%;
     margin: 0 10px;
     text-align: justify;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 25px;
+
+    > a {
+      font-size: 20px;
+      font-family: ${colors.titles};
+      text-decoration: none;
+      color: ${colors.red};
+    }
 
     &::selection {
       background-color: ${colors.contrast}80;

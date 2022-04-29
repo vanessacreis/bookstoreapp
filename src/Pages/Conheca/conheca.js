@@ -24,13 +24,19 @@ export const Historia = styled.section`
     margin-top: 25px;
     margin-bottom: 10px;
     color: ${colors.black};
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 30px;
     text-align: justify;
+
+    &::selection {
+      background-color: ${colors.contrast}80;
+    }
   }
 
-  > span {
+  .nome {
     color: ${colors.red};
+    font-size: 22px;
+    font-family: ${colors.titles};
   }
 `;
 

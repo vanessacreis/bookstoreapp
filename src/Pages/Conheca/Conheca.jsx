@@ -12,20 +12,18 @@ const Conheca = () => {
         <S.Historia>
           <Carousel />
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio,
-            sapiente? Quas, natus atque id nisi doloremque ab repellat
-            consequuntur iste, hic nesciunt pariatur iusto eos sit sint ipsam
-            nemo laborum. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Optio, sapiente? Quas, natus atque id nisi doloremque ab
-            repellat consequuntur iste, hic nesciunt pariatur iusto eos sit sint
-            ipsam nemo laborum. <br />
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio,
-            sapiente? Quas, natus atque id nisi doloremque ab repellat
-            consequuntur iste, hic nesciunt pariatur iusto eos sit sint ipsam
-            nemo laborum. Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Optio, sapiente? Quas, natus atque id nisi doloremque ab
-            repellat consequuntur iste, hic nesciunt pariatur iusto eos sit sint
-            ipsam nemo laborum.
+            Um grupo de amigos apaixonado por literatura e viagens decidiu
+            abandonar a vida rotineira de escritório na cidade de São Paulo e
+            atravessar o país levando cultura para todos os cantos. Movidos por
+            esse desejo, juntaram as economias, compraram e reformaram uma van e
+            assim, em 2019 nasceu a <span className="nome">Livraria na Van</span>. <br />
+            Mais do que uma livraria,uma experiência cultural conduzida pelas
+            palavras e que atravessa a malha rodoviária do Brasil, levando
+            literatura, arte e cultura para todos. Cidades grandes e pequenas,
+            litoral, interior, cerrado, floresta, selva de pedra. Nossa meta é
+            deixar a marca dos nossos pneus por aí e levar o amor pela
+            literatura a todos que ainda não tiveram o prazer de ser tocado pelo
+            poder das palavras.
           </p>
           <S.divRota />
         </S.Historia>
