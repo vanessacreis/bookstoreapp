@@ -13,6 +13,11 @@ export const Card = styled.div`
   font-family: ${colors.text};
   margin-right: 25px;
 
+  &:hover {
+    transition: 0.8s;
+    box-shadow: 5px 2px 10px ${colors.black}90;
+  }
+
   > img {
     width: 75px;
     height: 75px;
@@ -22,13 +27,14 @@ export const Card = styled.div`
 
   > h3 {
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: ${colors.red};
   }
 
   > p {
     width: 80%;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
+    color: ${colors.black};
   }
 `;

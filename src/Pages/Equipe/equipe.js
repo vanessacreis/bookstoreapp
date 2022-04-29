@@ -21,12 +21,20 @@ export const Container = styled.div`
       margin-bottom: 25px;
       display: flex;
       justify-content: space-around;
+
+      > a {
+        text-decoration: none;
+      }
     }
 
     .baixo {
       width: 100%;
       display: flex;
       justify-content: center;
+
+      > a {
+        text-decoration: none;
+      }
     }
   }
 
