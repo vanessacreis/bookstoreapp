@@ -4,7 +4,7 @@ import { colors } from "../../Style/globalStyle.js";
 export const Container = styled.main`
   width: 100%;
   height: auto;
-  min-height: 150vh;
+  min-height: 180vh;
   background-image: url(/assets/imgs/bg-catalogo.png);
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@ export const Catalogo = styled.div`
 
 export const Grid = styled.div`
   width: 85%;
-  min-height: 120vh;
+  min-height: 150vh;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 33.33% 33.33% 33.33%;
