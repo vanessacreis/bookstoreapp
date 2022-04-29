@@ -53,7 +53,6 @@ function Catalogo() {
                 );
               })}
           </S.Grid>
-          <BotaoVerMais />
         </S.Caixa>
       </S.Container>
       <LargeFooter />
