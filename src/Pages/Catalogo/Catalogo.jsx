@@ -15,7 +15,7 @@ function Catalogo() {
       setLivro(response.data.books);
       console.log(livro);
     });
-  }, [livro]);
+  }, []);
 
   return (
     <>
