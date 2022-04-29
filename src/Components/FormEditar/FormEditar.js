@@ -78,7 +78,7 @@ export const Caixa = styled.div`
     width: 100%;
     margin-top: 15px;
     display: flex;
-    justify-content: space-aroundn;
+    justify-content: space-between;
   }
 
   .input {
