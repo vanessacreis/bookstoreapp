@@ -18,7 +18,19 @@ O frontend foi desenvolvido consumindo a API do estoque da Livraria criado no m�
 - Slick-Carousel
 - React-Leaflet
 
+
 ---
+## 📚 Ferramentas utilizadas ⚒️
+
+- Canva
+- Figma
+- Trello
+- Notion
+- Insomnia
+- Unsplash
+
+---
+
 
 ## 📚 Como executar 🏁
 
@@ -54,9 +66,8 @@ http://localhost:3000/
 
 ---
 
+## 📚 Deploy 🌐
 <img src="public/assets/imgs/readme1.png" >
-
-### 📚 Deploy 🌐
 
 A aplicação funcionando pode ser visualizada no deploy, você pode acessá-lo <a href="https://bookstoreapp.vercel.app/">aqui</a>.
 
